@@ -2,11 +2,15 @@
 Simple Go web server containerized with Docker.
 
 ## Run locally (without Docker)
+```bash
 go run main.go
-
+```
 ## Run with Docker
-docker build -t <DOCKERHUB_USER>/go-docker-app:latest .
-docker run -p 8080:8080 <DOCKERHUB_USER>/go-docker-app:latest
+```bash
+docker build -t maro200/go-server:latest .
+docker run --rm -p 8080:8080 maro200/go-server:latest
+```
+
 
 ## Docker Hub
-Docker image: https://hub.docker.com/r/<DOCKERHUB_USER>/go-docker-app
+Docker image: https://hub.docker.com/r/maro200/go-server
